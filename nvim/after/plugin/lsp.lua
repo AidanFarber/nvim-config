@@ -10,7 +10,7 @@ lsp.ensure_installed({
 	'lua_ls',
 	'rust_analyzer',
     'gopls',
-    'emmet-ls',
+    'emmet_ls',
 })
 
 local cmp = require('cmp')
