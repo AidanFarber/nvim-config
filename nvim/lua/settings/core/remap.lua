@@ -5,11 +5,11 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Dark Mode Toggle for Rob
 vim.keymap.set("n", "<leader>rm", function()
-    vim.cmd('set background=dark')
+    vim.cmd('colorscheme tokyonight-night')
 end)
 
 vim.keymap.set("n", "<leader>lm", function()
-    vim.cmd('set background=light')
+    vim.cmd('colorscheme rose-pine-dawn')
 end)
 
 vim.keymap.set('n', '<leader>neo', function()
@@ -57,5 +57,6 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/the
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
+    require("settings.lazy")
     vim.cmd("so")
 end)
