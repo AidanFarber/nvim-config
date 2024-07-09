@@ -1,2 +1,2 @@
-require("settings.core")
+require("settings.init")
 require("settings.lazy")
